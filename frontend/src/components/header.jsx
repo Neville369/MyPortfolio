@@ -2,6 +2,8 @@ import { useState } from "react";
 import logo from "../assets/png/logo.png";
 
 function Header({ activeSection, onNavigate }) {
+  const resumeUrl =
+    "https://1drv.ms/b/c/d9ef4d7cc45fdf1a/IQBcImFpzsMURoI2PmUosgb-AXN5Y3U-lpBZE6DnBYJY8X8?e=CjsKN7";
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleNavigate = (section) => {
@@ -74,7 +76,9 @@ function Header({ activeSection, onNavigate }) {
             Certificate
           </button>
           <a
-            href="#"
+            href={resumeUrl}
+            target="_blank"
+            rel="noreferrer"
             className="flex items-center gap-2 hover:text-blue-400 transition-colors"
           >
             Resume
@@ -120,7 +124,9 @@ function Header({ activeSection, onNavigate }) {
               Certificate
             </button>
             <a
-              href="#"
+              href={resumeUrl}
+              target="_blank"
+              rel="noreferrer"
               className="px-2 py-2 rounded hover:bg-white/10 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >

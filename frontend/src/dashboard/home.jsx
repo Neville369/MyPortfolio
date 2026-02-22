@@ -5,6 +5,9 @@ import githubDarkIcon from "../assets/svg/github-dark.svg";
 import whatsappIcon from "../assets/svg/whatsapp.svg";
 
 function Home() {
+  const resumeUrl =
+    "https://1drv.ms/b/c/d9ef4d7cc45fdf1a/IQBcImFpzsMURoI2PmUosgb-AXN5Y3U-lpBZE6DnBYJY8X8?e=CjsKN7";
+
   return (
     <section className="relative w-full min-h-[90vh] bg-[#0b1a33] text-white flex items-center justify-center">
       {/* MAIN CONTENT */}
@@ -23,7 +26,7 @@ function Home() {
           </p>
 
           <a
-            href="https://1drv.ms/b/c/d9ef4d7cc45fdf1a/EW1-99mUnRhKpfGBmj4pOtMBRaj0_PsimpA60MOsyWEgyw?e=Gqsn51"
+            href={resumeUrl}
             target="_blank"
             rel="noreferrer"
             className="inline-block bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-md font-semibold transition"
